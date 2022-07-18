@@ -1,0 +1,91 @@
+
+/*import library Scanner for user inputs*/
+
+
+import java.util.Scanner;
+
+/*sets up GroceryStore class */
+public class GroceryStore{
+
+// * Instance Variables  // Declare instance fields */
+
+
+	private String itemname;  
+    private double unitprice;  
+    private int serialno;  
+    private int stocklevel;
+	private double reorderlevel;
+}
+
+// Constructors
+// *********** 
+// The constructor initialises the instance fields
+
+	public GroceryStore(String startName, double startPrice, int startSerialno, int startStock, double startReorderlevel )
+	
+	itemname = startName;
+	unitprice = startPrice;
+	serialno = startSerialno;
+	stocklevel = startStock;
+	reorderlevel = startReorderlevel;
+	
+	
+/* methods */	
+
+public static void observer(){
+		/*
+		 * observer does nothing at the moment
+		 */
+		
+	}// end observer//
+	
+/* mutator methods(get, set) */
+public String getname() {
+        return itemname;
+    }
+public double getprice() {
+        return unitprice;
+    }	
+public int getserialnumber() {
+        return serialno;
+    }
+public int getstock() {
+        return stocklevel;
+    }
+	
+public void setstocklevel(int amt1) {
+         stocklevel= amt1;
+    }
+public int getreorderlevel() {
+        return reorderlevel;
+    }
+/* display method for for name,price,serialno,*/	
+public static void displayOutput() {}	
+	
+public class PerishableItem extends GroceryStore{
+	/* declare instance fields  */
+
+
+		double expiryDate;
+		String storageInstructions;
+		int daysLeft;
+}
+
+// constructor initialises the instance fields
+
+
+	PerishableItem(double ed, String si, double cd,){ //
+		super(startName, startPrice, serialNo)        //
+	}
+	
+	
+		public double getEd()  //ed=expiryDate
+	           {return ed;}
+			   
+		public String getSI()   //si=storageInstructions
+			   
+			   
+		public double getDL()  //dl=daysLeft
+	{return cd; }
+	
+	
